@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://db.onlinewebfonts.com/c/38d41072aa88a50711d4d50dd0d50f6b?family=Neue+Machina+Regular" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/languages.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/accordion.css">
+    <link rel="stylesheet" href="/assets/css/folio.css">
+    <link rel="stylesheet" href="dark.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    <title>Leo Sousa Dev - Portfolio</title>
+</head>
+<body>
+
+        <div class="container dark">
+            <label class="switch">
+            <input id="darkModeToggle" type="checkbox" >
+            <span class="slider">
+    </span>
+            </label>
+
+
+    <header class="header">     
+               <div class="header-contact">
+                <button id="toggle-btn" class="toggle-btn rotated" onclick="toggleSidebar()"></button>
+                <div class="sidebar" id="sidebar">
+
+<a href="https://www.linkedin.com/in/leosousadev/" class="linkedIn"><button type="button"></button></a>
+            <a class="gitHub" href="github.com/sousalmdev"><button type="button"></button></a>
+        </div>
+                </div>
+     
+        <img src="assets/assets/img/portflow (1).jpg" class="picture">
+        <h1 class="title">Hello,
+            <br> I am <span class="animated"><strong>Leo</strong></span>.
+      </h1>
+        <div class="persoInfo">
+            <p class="job">Junior Developer</p>
+                <p class="location">Fortaleza-CE</p>
+                    <p class="zap">(85) 9-8930-9959</p>
+                        <p class="mail">leandromedeiros690@gmail.com</a></p>
+    </div>
+</header>
+<main>
+<section class="accordion open">
+    <button class="trigger" type="button">
+            About Me <span class="animated"></span>
+    </button>
+
+    <div class="content">
+ <p id="texto">Leandro Medeiros de Sousa, este é meu nome.
+    Brasileiro, 19 anos de idade e uma paixão antiga por tecnologia, desde pequeno, computadores sempre encheram meus olhos. E então, quando surgiu a oportunidade, comecei a estudar para me tornar um dev.
+ </p>
+    </div>
+    
+</section>
+<section class="accordion open">
+    <button class="trigger" type="button">  
+            Languages
+    </button>
+    <div class="content">
+        <ul class="languages">
+            <li><img class='br' src="/assets/assets/img/pngwing.com.png" alt="Portuguese - BR(Fluent)" title="Portuguese - BR (Fluent)"></li>
+            <li><img class="en" src="/assets/assets/img/pngwing.com (1).png" alt="English (Advanced)" title="English (Advanced)"></li>
+            <li><img class="es" src="/assets/assets/img/pngwing.com (2).png" alt="Español (Mediano)" title="Español (Mediano)"></li>
+        </ul>
+    </div>
+    
+</section>
+<section class="accordion open">
+    <button class="trigger" type="button">
+        Portfolio
+    </button>
+
+    <div class="content">
+        <ul class="projects">
+            <li class="animated-li"><span>Password Creator (React Native)</span><br>
+                <a href="http://blablabla">link here</a></li>
+                <li class="animated-li"><span>Landing Page</span><br>
+                    <a href="http://blablabla">link here</a></li>
+                    <li class="animated-li"><span>Supplements Site</span>
+                        <br>
+                        <a href="http://blablabla">link here</a></li>
+                        <li class="animated-li"><span>Netflix with API request</span><br>
+                            <a href="http://blablabla">link here</a></li>
+        </ul>
+    </div>
+    
+</section>
+<section class="accordion open">
+    <button class="trigger" type="button">
+        Educação
+    </button>
+    <div class="content">
+        <ul class="projects">
+            <li><span>Password Creator (React Native)</span><a href="http://blablabla">link here</a></li>
+            <li>Inglês (Avançado)</li>
+            <li>Espanhol (Intermediário)</li>
+        </ul>
+    </div>
+    
+</section>
+<section class="accordion open">
+    <button class="trigger" type="button">
+        Skills
+    </button>
+    <div class="content">
+        <ul class="projects">
+            <li><span>Project 1 :</span><a href="http://blablabla">link here</a></li>
+            <li>Inglês (Avançado)</li>
+            <li>Espanhol (Intermediário)</li>
+        </ul>
+    </div>
+    
+</section>
+<section class="accordion open">
+    <button id="xp" class="trigger" type="button">
+        Experiência profissional
+    </button>
+    <div class="content">
+        <ul class="projects">
+            <li><span>Project 1 :</span><a href="http://blablabla">link here</a></li>
+            <li>Inglês (Avançado)</li>
+            <li>Espanhol (Intermediário)</li>
+        </ul>
+    </div>
+    
+</section>
+<footer>© 2024. Todos os direitos reservados. Desenvolvido por :<a href="https://instagram.com/sousalmd"> Leandro Sousa</a></footer>
+</main>
+</div>
+
+</div>
+
+<script src="assets/js/script.js"></script>
+
+</body>
+</html>

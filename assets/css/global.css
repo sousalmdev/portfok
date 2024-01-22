@@ -1,0 +1,107 @@
+:root {
+    --grid-unit: 1rem;
+    --border-radius-base: 0.5rem;
+  }
+  
+  [data-theme="light"] {
+    --color-bg: #ffffff;
+    --color-fg: #000000;
+  }
+  
+  [data-theme="dark"] {
+    --color-bg: #000000;
+    --color-fg: #ffffff;
+  }
+  
+
+  *{
+    box-sizing: border-box;
+    font-family:'Open Sans', sans-serif;
+}
+.container{
+    margin: 1rem;
+    backdrop-filter: blur(4px);
+}
+@media only screen and (min-width:768px){
+    .container{
+        max-width: 800px;
+        margin: 1rem auto;
+    }
+    .container::before, .container::after{
+        width: 70vw;
+    }
+
+}
+body{
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    margin-top: 6.5rem;
+    height: auto;
+    padding-bottom: 4rem;
+    background-color: rgba(255, 255, 255, 0.531);
+    transition: .5s ease;
+}
+.dark{
+  height: auto;
+  padding-bottom: 4rem;
+  background-color: rgba(0, 0, 0, 0.267);
+  color:white;
+  transition: .5s ease-in;
+}
+
+@media only screen and (max-width:768px){
+  .container{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+}
+.dark .header img{
+  opacity: 100;
+  content: url(/assets/assets/img/portflow\ \(1\).jpg);
+}
+.dark strong{
+  color: yellow;
+  transition: .5s linear;
+}
+.dark .header img{
+  animation: 2s fadeLeftToRight forwards;}
+@keyframes fadeLeftToRight {
+  from{
+      translate: -200px;
+      opacity:0;
+  }to{
+      translate: 0;
+      opacity: 100;
+  }
+}
+.container .dark .persoInfo{
+  color: white;
+}
+.dark .zap a{
+  color: white;
+}
+.dark .mail a{
+  color: white;
+}
+
+.dark{
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.133);
+  color: white;
+}
+.dark{
+  height: auto;
+  padding-bottom: 4rem;
+  background-color: rgba(0, 0, 0, 0.267);
+  color:white;
+  transition: .5s ease-in;
+}
+main{
+  margin-top: 5rem;
+}
+

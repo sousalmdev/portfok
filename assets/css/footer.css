@@ -1,0 +1,22 @@
+footer,footer a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    text-align: center;
+    padding-top: 4rem;
+    transition: .5s ease-in;
+}
+a:hover{
+    color: rgb(140, 0, 255);
+}
+.dark footer, .dark footer a{
+    color: white;
+}
+.dark a:hover{
+    color: rgb(255, 217, 0);
+}
+@media only screen and (max-width:768px){
+    footer,footer a{
+        font-size: 11px;
+    }
+}

@@ -1,0 +1,48 @@
+.dark .header img{
+    opacity: 100;
+    content: url(/assets/assets/img/portflow\ \(1\).jpg);
+}
+.dark strong{
+    color: yellow;
+    transition: .5s linear;
+}
+.dark .header img{
+    animation: 2s fadeLeftToRight forwards;}
+@keyframes fadeLeftToRight {
+    from{
+        translate: -200px;
+        opacity:0;
+    }to{
+        translate: 0;
+        opacity: 100;
+    }
+}.dark{
+    padding:2.5rem 0 0 2rem;
+    border: 1px solid rgb(255, 221, 0);
+    border-radius: 2rem;
+    color: white;
+    background-color: #00000077;
+  }
+  .container .dark .persoInfo{
+    color: white;
+  }
+.dark .zap a{
+    color: white;
+  }
+.dark .mail a{
+    color: white;
+  }
+
+.dark{
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.133);
+    color: white;
+}
+.dark{
+    height: auto;
+    padding-bottom: 4rem;
+    background-color: rgba(0, 0, 0, 0.267);
+    color:white;
+    transition: .5s ease-in;
+  }
+  

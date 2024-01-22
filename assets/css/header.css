@@ -1,0 +1,372 @@
+
+header img{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin-top: 1rem;
+}
+
+.header-contact{
+    position: absolute;
+    top: 20px;
+    right: 4px;
+    border-radius: 50%;
+    justify-content: space-between;
+}
+.header-contact button{
+    background-color: transparent;
+    border: none;
+    width: 20px;
+    height: 20px;
+}
+.gitHub button{
+    transition: .5s ease-in;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    border-radius: 50%; 
+    background-image: url(/assets/icons/icons8-github-40.png);
+}
+.linkedIn button{
+    transition: .5s ease-in;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    border-radius: 50%; 
+    background-image: url(/assets/icons/icons8-linkedin-40.png);
+}
+.linkedIn button:active{
+    cursor: pointer;
+}
+.dark .linkedIn button{
+    transition: .5s ease-in;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%; 
+    background-image: url(/assets/icons/icons8-linkedin-40\ \(1\).png);
+}
+.dark .gitHub button{
+    transition: .5s ease-in;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%; 
+    background-image:url(/assets/icons/icons8-github-40\ \(1\).png);
+}
+.container::after{
+    content: '';
+    top: auto;
+    left: auto;
+    bottom: 0;
+    right: 0;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    background-repeat: round;
+    background-image: url(/assets/assets/img/particles.svg);
+    color: rgb(0, 0, 0);
+}
+.header h1{
+    text-align: center;
+    font-family:'Open Sans';
+    font-weight: 100;
+    transition: .5s fade-in;
+}
+.header p{
+font-family: 'Open Sans',sans-serif;
+}
+.container{
+    padding:2.5rem 0 0 2rem;
+    border: 1px solid rgb(121, 106, 255);
+    border-radius: 2rem;
+}
+
+.persoInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+} 
+
+.title{
+    transition: 200ms ease-in-out;
+}
+/* Defina as propriedades de transição separadamente para p e a */
+.dark .persoInfo p{
+    transition-property: color;
+    transition-duration: -50ms;
+    transition-timing-function: linear;
+}
+
+
+.persoInfo p{   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: .5rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.persoInfo img{
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: .5rem;
+    inline-size: auto;
+    border-radius: 0;
+}
+.persoInfo p::before{
+    content:'';
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: .5rem;
+}
+.persoInfo .job::before{
+    background-image: url('/assets/icons/job.svg');
+}
+.dark .persoInfo .job::before{
+    background-image: url('/assets/icons/job\ copy.svg');
+}
+.persoInfo .location::before{
+    background-image: url('/assets/icons/location.svg');
+}
+.dark .persoInfo .location::before{
+    background-image: url('/assets/icons/location\ copy.svg');
+}
+.persoInfo .zap::before{
+    content: '';
+    background-image: url('/assets/icons/zap.svg');
+}
+.dark .persoInfo .zap::before{
+    content: '';
+    background-image: url('/assets/icons/zap\ copy.svg');
+}
+.persoInfo .mail::before{
+    background-image: url('/assets/icons/mail.svg');
+}
+.dark .persoInfo .mail::before{
+    background-image: url('/assets/icons/mail\ copy.svg');
+}
+
+@media only screen and (min-width:768px){
+   .header{
+       display: grid;
+        grid-template-areas: "picture title"
+        "picture information";
+    }
+    .header .picture{
+        grid-area: picture;
+        margin: 0 auto;
+    }
+    .header .title{
+        grid-area: title;
+        text-align: start;
+        max-width: 200px ;
+    }
+    .header .persoInfo{
+        grid-area: information;
+    }
+}
+@media only screen and (max-width:768px) {
+        .header-contact{
+            position: absolute;
+            top: 5px;
+            right: 4px;
+            border-radius: 50%;
+            justify-content: space-between;
+            display: flex;
+            flex-direction: row;
+    }
+}
+button{
+    padding: 2rem;
+}
+
+@media only screen and (max-width:768px){
+    ul{
+        display: flex;
+        flex-direction: column;
+    }
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 1rem;
+    border: 1px solid black;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+   background-color: rgb(121, 106, 255);
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+    background-image: url(/assets/assets/img/icons8-crescent-moon-50\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position: center;
+
+  }
+
+  input:checked + .slider {
+    background-color: #000000;
+    border: 1px solid white;
+    
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #ffffff;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+    background-color: #ffd900;
+    background-image: url(/assets/assets/img/sun.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center;
+  }
+  
+
+  @media only screen and (max-width:768px) {
+
+    .switch{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        max-width: 12%;
+        height:30px;
+        justify-content: center;
+        align-items: center;
+        left:1rem;
+        top: 1rem;
+    }
+    .slider:before{
+        top: 2px;
+        width: 25px;
+        height: 25px;
+        background-position: center;
+    }
+    .slider:before{
+        background-size: 14px;
+    }  input:checked + .slider:before {
+        background-size: 13px;
+    }
+  }
+.dark{
+    padding:2.5rem 0 0 2rem;
+    border: 1px solid rgb(255, 221, 0);
+    border-radius: 2rem;
+    color: white;
+    background-color: #00000077;
+  }
+  .container .dark .persoInfo{
+    color: white;
+  }
+.dark .zap a{
+    color: white;
+  }
+.dark .mail a{
+    color: white;
+  }
+
+.dark{
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.133);
+    color: white;
+}
+
+.sidebar {
+    display: inline;
+    flex-direction: row;
+    width: fit-content;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    height: 4rem;
+    color: #fff;
+    padding: 0;
+    transition: .5s ease;
+    overflow-x: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+    .sidebar {
+        width: fit-content;
+        display: flex;
+        flex-direction: row;
+        margin-top: 50px;
+        background-color: rgba(255, 255, 255, 0.22);
+    }
+
+    .toggle-btn {
+        transition: .5s ease;
+        position: absolute; 
+        right: -2rem;
+        top: 3.8rem;
+        background-image: url(/assets/icons/left-chevron.png);
+        background-size: 46px;
+        background-repeat: no-repeat;
+    }
+    .toggle-btn.moved{
+        transform: translateX(-140px) rotateY(180deg);
+        
+    }
+    .dark .toggle-btn{
+        background-image:url(/assets/icons/icons8-left-arrow-40.png) ;
+        right: -2rem;
+        background-size: 40px;
+    }
+    .dark .toggle-btn.moved{
+        transform: translateX(-145px) rotateY(180deg);
+    }
+}
+@keyframes rotate {
+    from{
+        rotate: 0;
+    }to{
+        rotate:180deg;
+    }
+}

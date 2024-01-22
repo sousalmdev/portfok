@@ -1,0 +1,48 @@
+.languages .br{
+   max-height: 50px;
+   max-width: 50px;
+}
+.languages .en{
+   max-height: 50px;
+   max-width: 50px;
+}
+.languages .es{
+   max-height: 50px;
+   max-width: 50px;
+}
+ .languages{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+        font-weight: 700;
+        font-size: .8rem;
+        
+ }
+ .languages li{
+    padding:1rem;
+ }
+ .languages li::before{
+    content:'';
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 2rem;
+    width: 1rem;
+    margin-right: .5rem;
+ }
+ .languages li::before{
+    background-image: url(/assets/assets/check.svg);
+ }
+ li:nth-child(2)::before{
+   height: 1.45rem;
+ }
+ li:nth-child(3)::before{
+   height: 1.425rem;
+ }
