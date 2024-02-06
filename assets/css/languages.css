@@ -37,6 +37,42 @@
     width: 1rem;
     margin-right: .5rem;
  }
+ .languages li:nth-child(1):after{
+   content:'';
+   display: inline-block;
+   justify-content: center;
+   align-items: center;
+   background-repeat: no-repeat;
+   background-size: contain;
+   height: 2rem;
+   width: 1rem;
+   margin-left: .5rem;
+   background-image:url(/assets/icons/icons8-conexão-ótima-24.png) ;
+}
+.languages li:nth-child(2):after{
+   content:'';
+   display: inline-block;
+   justify-content: center;
+   align-items: center;
+   background-repeat: no-repeat;
+   background-size: contain;
+   height: 1.2rem;
+   width: 1rem;
+   margin-left: .5rem;
+   background-image:url(/assets/icons/icons8-conexão-média-24.png) ;
+}
+.languages li:nth-child(3):after{
+   content:'';
+   display: inline-block;
+   justify-content: center;
+   align-items: center;
+   background-repeat: no-repeat;
+   background-size: contain;
+   height: 1.2rem;
+   width: 1rem;
+   margin-left: .5rem;
+   background-image:url(/assets/icons/icons8-conexão-ruim-24.png) ;
+}
  .languages li::before{
     background-image: url(/assets/assets/check.svg);
  }
