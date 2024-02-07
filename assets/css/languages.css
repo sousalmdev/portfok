@@ -71,7 +71,7 @@
    height: 1.2rem;
    width: 1rem;
    margin-left: .5rem;
-   background-image:url(/assets/icons/icons8-conexão-ruim-24.png) ;
+   background-image:url(/assets/icons/icons8-conexão-média-24.png) ;
 }
  .languages li::before{
     background-image: url(/assets/assets/check.svg);
