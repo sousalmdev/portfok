@@ -76,8 +76,8 @@
 }
 @media only screen and (max-width:360px) {
     .fab{
-        top: 100px;
-        left: 15px;
+        top: 500px;
+        left: 0px;
     }
     .box{
         left: 14px;
