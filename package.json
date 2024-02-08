@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@material/fab": "^14.0.0",
     "normalize.css": "^8.0.1"
   }
 }

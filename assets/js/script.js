@@ -22,17 +22,35 @@ gatilhoAccor.forEach((trigger) => {
                 container.classList.toggle('dark', darkModeToggle.checked);
             });
         });
+        function showImagesWithDelay() {
+            const images = document.querySelectorAll('.box img');
+            const delay = 0;
 
-// Garante que a barra lateral está fechada ao iniciar a página
-document.getElementById('sidebar').style.width = '0';
+            // Mostra cada imagem com um atraso gradativo
+            images.forEach(function(image) {
+                setTimeout(function() {
+                    image.style.opacity = 1;
+                }, delay);
+                delay += 500; // Aumenta o atraso para a próxima imagem
+            });
+        }
+        var box = document.querySelector('.box');
+            box.classList.remove('opened')
+        // Adiciona um ouvinte de evento de clique à imagem .fab
+        document.querySelector('.fab').addEventListener('click', function() {
+            var box = document.querySelector('.box');
+         
+            box.classList.toggle('opened'); // Adiciona ou remove a classe 'opened' da caixa
+            if (box.classList.contains('opened')) {
+                showImagesWithDelay(); // Chama a função para exibir imagens com atraso gradativo quando a caixa é aberta
+            }
+        });
 
-function toggleSidebar() {
-    var sidebar = document.getElementById('sidebar');
-    sidebar.style.width = (sidebar.offsetWidth === 0) ? '120px' : '0';
-}
+    //HORA DO JSASIUDFAS9HGUASIBNFDG
+    let menuBtns = document.querySelectorAll('.menu-btn');
 
-let button = document.getElementById('toggle-btn');
-
-button.addEventListener('click', function() {
-    button.classList.toggle('moved');
-});
+    menuBtns.forEach(function(btn) {
+    btn.classList.remove('active');
+    btn.addEventListener('click', function(e) {
+        btn.classList.toggle('active');
+    })})

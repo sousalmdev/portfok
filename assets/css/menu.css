@@ -1,0 +1,85 @@
+.fab{
+    position: fixed;
+    top:96px ;
+    left: 32px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    box-shadow: 1px 1px 8px rgb(108, 55, 255);    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu-btn{
+    transition: .2s ease-in;
+}
+.active{
+    rotate: 45deg;
+    transition: .2s ease-in;
+}
+.fab:hover{
+    cursor: pointer;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 140px;
+    left: 30px;
+    transition: all .5s ease-in;
+}
+
+
+
+#plusSymbolOne{
+    position: absolute;
+}
+
+.dark #plusSymbolOne{
+    z-index: -1;
+}
+.opened{
+    height: fit-content;
+    transition: .6s ease-in;
+}
+.item{
+    filter: drop-shadow(1px 1px 2px white);
+    margin-bottom: 1rem;
+}
+.item1{
+    transition: .5s ease-in;
+    transition-delay: .5s;
+}
+.item2{
+    transition: .5s ease-in;
+    transition-delay: .5s;
+}
+.item3{
+    transition: .5s ease-in;
+    transition-delay: .3s;
+}
+.item4{
+    transition: .5s ease-in;
+    transition-delay: .2s;
+}
+.item5{
+    transition: .5s ease-in;
+    transition-delay: .1s;
+}
+.item:hover{
+    scale: 1.125;
+}
+@media only screen and (max-width:360px) {
+    .fab{
+        top: 90px;
+        left: 15px;
+    }
+    .box{
+        left: 14px;
+    }
+}
