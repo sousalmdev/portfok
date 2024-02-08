@@ -74,13 +74,15 @@
 .item:hover{
     scale: 1.125;
 }
-@media only screen and (max-width:360px) {
+@media only screen and (max-width:419px) {
     .fab{
         position: absolute;
-        top: 120px;
-        left: 0px;
+        top: 170px;
+        left: 30px;
     }
     .box{
-        left: 14px;
+      top: 200px;
+      
+        left:27px;
     }
 }
