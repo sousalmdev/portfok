@@ -7,7 +7,7 @@
     margin: 1rem 5rem;
     transition: .25s;
 }
-.accordion .trigger::after{
+.accordion .trigger:not(#no-after)::after{
     content: '';
     display: inline-block;
     width: 1rem;
