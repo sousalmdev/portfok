@@ -1,88 +1,67 @@
-.fab{
-    position: fixed;
-    top:96px ;
-    left: 32px;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    box-shadow: 1px 1px 8px rgb(108, 55, 255);    
+.contacts{
+    margin-block-start: 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: auto;
 }
-.menu-btn{
-    transition: .2s ease-in;
-}
-.active{
-    rotate: 45deg;
-    transition: .2s ease-in;
-}
-.fab:hover{
-    cursor: pointer;
-}
-.box{
+.contact-list li{
+    transition: .5s ease;
+    width: 50px;
+    height: 50px;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-list{
+    display: flex;
     align-items: center;
     justify-content: center;
-    width: 32px;
-    height: 0;
-    overflow: hidden;
-    position: fixed;
-    top: 140px;
-    left: 30px;
-    transition: all .5s ease-in;
+    list-style: none;
+    flex-direction: row;
+    width: 100%;
+    margin-right: 5rem;
+    gap: 30px;
+}
+.contact-list a span::before{
+    transition: .5s ease;
+    content: '';
+    width: 50px;
+    height: 50px;
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.item1 span::before{
+    background: url(/logo/icons8-linkedin-50.png);
 }
 
-
-
-#plusSymbolOne{
-    position: absolute;
+.dark .item1 span::before{
+    background: url(/logo/icons8-linkedin-50\ \(1\).png);
 }
-
-.dark #plusSymbolOne{
-    z-index: -1;
+.item2 span::before{
+    background: url(/logo/icons8-github-50.png);
 }
-.opened{
-    height: fit-content;
-    transition: .6s ease-in;
+.dark .item2 span::before{
+    background: url(/logo/icons8-github-50\ \(2\).png);
 }
-.item{
-    filter: drop-shadow(1px 1px 2px white);
-    margin-bottom: 1rem;
+.item3 span::before{
+    background: url(/logo/icons8-instagram-50.png);
 }
-.item1{
-    transition: .5s ease-in;
-    transition-delay: .5s;
+.dark .item3 span::before{
+    background: url(/logo/icons8-instagram-50\ \(2\).png);
 }
-.item2{
-    transition: .5s ease-in;
-    transition-delay: .5s;
+.item4 span::before{
+    background: url(/logo/icons8-gmail-50.png);
 }
-.item3{
-    transition: .5s ease-in;
-    transition-delay: .3s;
+.dark .item4 span::before{
+    background: url(/logo/icons8-gmail-50\ \(2\).png);
 }
-.item4{
-    transition: .5s ease-in;
-    transition-delay: .2s;
+.contact-list li:hover{
+    scale: 1.1;
 }
-.item5{
-    transition: .5s ease-in;
-    transition-delay: .1s;
-}
-.item:hover{
-    scale: 1.125;
-}
-@media only screen and (max-width:419px) {
-    .fab{
-        position: absolute;
-        top: 170px;
-        left: 30px;
-    }
-    .box{
-      top: 200px;
-      
-        left:27px;
+@media only screen and (max-width:615px){
+    .contact-list{
+        margin-left: 2.5rem;
     }
 }

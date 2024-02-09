@@ -48,9 +48,12 @@ gatilhoAccor.forEach((trigger) => {
 
     //HORA DO JSASIUDFAS9HGUASIBNFDG
     let menuBtns = document.querySelectorAll('.menu-btn');
-
+        let container2 = document.querySelector('.container')
     menuBtns.forEach(function(btn) {
     btn.classList.remove('active');
     btn.addEventListener('click', function(e) {
-        btn.classList.toggle('active');
+        btn.classList.toggle('active'); 
     })})
+ 
+    ;
+    

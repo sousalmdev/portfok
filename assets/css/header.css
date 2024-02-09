@@ -60,7 +60,15 @@ font-family: 'Open Sans',sans-serif;
     transition-timing-function: linear;
 }
 
-
+.persoInfo a{
+    text-decoration: none;
+    color: black;
+    transition: .2s;
+}
+.dark .persoInfo a{
+    color: white;
+    transition: .2s ease-in-out;
+}
 .persoInfo p{   
     display: flex;
     flex-direction: row;
@@ -207,7 +215,7 @@ button{
   
   input:checked + .slider:before {
     transform: translateX(26px);
-    background-color: #ffd900;
+    background-color: #f5e171;
     background-image: url(/assets/assets/img/sun.png);
     background-repeat: no-repeat;
     background-size: 20px;
@@ -248,7 +256,7 @@ button{
 }
 .dark{
     padding:2.5rem 0 0 2rem;
-    border: 1px solid rgb(255, 221, 0);
+    border: 1px solid rgb(255, 240, 144);
     border-radius: 2rem;
     color: white;
     background-color: #00000077;
@@ -259,28 +267,13 @@ button{
 .dark .zap a{
     color: white;
   }
-.dark .mail a{
-    color: white;
-  }
-
 .dark{
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.133);
     color: white;
 }
 
-.sidebar {
-    display: inline;
-    flex-direction: row;
-    width: fit-content;
-    border-top-left-radius: 1rem;
-    border-bottom-left-radius: 1rem;
-    height: 4rem;
-    color: #fff;
-    padding: 0;
-    transition: .5s ease;
-    overflow-x: hidden;
-}
+
 
 
 @keyframes rotate {

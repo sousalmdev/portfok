@@ -66,7 +66,7 @@ body{
   content: url(/assets/assets/img/portflow\ \(1\).jpg);
 }
 .dark strong{
-  color: yellow;
+  color: rgb(255, 226, 148);
   transition: .5s linear;
 }
 .dark .header img{
