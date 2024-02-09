@@ -8,6 +8,13 @@
     transition: .25s;
     margin-block: 2.5rem;
 }
+#no-after::after{
+    display:none
+    }
+    #no-after{
+        font-size:1.1rem;
+        }
+    
 .accordion .trigger::after{
     content: '';
     display: inline-block;
