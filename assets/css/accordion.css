@@ -174,7 +174,7 @@ ul{
     color: rgb(255, 140, 0)
   }
   .skills li:nth-child(2){
-    color: rgb(0, 72, 255)
+    color: rgb(52, 153, 235)
   }
   .skills li:nth-child(3){
     color: rgb(255, 208, 0)
@@ -186,7 +186,7 @@ ul{
     color: rgb(19, 187, 7)
   }
   .skills li:nth-child(6){
-    color: rgb(0, 187, 255)
+    color: rgb(85, 181, 215)
   }
   .skills li:hover{
 scale:1.1;  }
