@@ -167,8 +167,10 @@ ul{
     justify-content: center;
     align-items: center; padding: 20px;
     margin-inline-start: -3rem;
-    filter: drop-shadow(-1px .5px 0px white);
     
+  }
+  .skills h2{
+    font-weight: 350;
   }
   .skills li:nth-child(1){
     color: rgb(255, 140, 0)
