@@ -222,23 +222,42 @@ scale:1.1;
   margin-top: 8px;
   width: 190px;
   height: 250px;
+  border-radius: 1rem;
+  box-shadow: 2px 0px 4px rgb(255, 255, 255);
 }
-.CVs label{
-  font-size: large;
+.CVs span{
+  color: red;
+  transition: .5s ease;
+}
+.CVs .downloadable:hover>span{
+  color :white;
+  scale: 0.9;
+}
+.CVs .downloadable:hover{
+  background-color: rgb(255, 0, 0);
+}
+
+.CVs .downloadable{
+  display: flex;    
+  align-items:center;
+  justify-content: center;
+  text-decoration: none;
+  color: none;
+  width: 190px;
+  border: 1px solid white;
+  border-radius: .4rem;
+  padding: 5px;
+  margin-top: 16px;
   transition: .3s ease;
 }
 .CVs label{
-  background-color: rgba(255, 255, 255, 0.556);
-  color: black;
+  font-size: large;
+  transition: .5s ease;
 }
-.CVs li:nth-child(1):hover > label{
-  color: white;
-  background: linear-gradient(to left, rgba(0, 128, 0, 0.458) 50%, rgba(255, 255, 0, 0.442) 50%);
+.CVs label{
+  color: rgb(255, 255, 255);
 }
-.CVs li:nth-child(2):hover > label{
-  color: white;
-  background: linear-gradient(to left, rgba(255, 255, 255, 0.458) 50%, rgba(255, 0, 0, 0.442) 50%);
-}
+
 @media (max-width:760px) {
   .CVs{
     display: flex;
@@ -250,5 +269,8 @@ scale:1.1;
     margin-top: 8px;
     width: 150px;
     height: 200px;
+  }
+  .CVs .downloadable{
+    width: 150px;
   }
 }
