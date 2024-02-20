@@ -3,7 +3,6 @@
     padding: 0;
     list-style: none;
     align-items: left;
-    justify-content: space-between;
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -23,10 +22,9 @@
     margin-right: .5rem;
 
 }
-.projects span::before{
-    background-image: url(/assets/icons/iconmonstr-github-1\ 1.svg);
-}
+
 .projects a{
+    transition: .5s ease;
     text-decoration:none;
     color: white;
     display: inline-block;

@@ -5,7 +5,7 @@
     border: 1px solid rgb(0, 0, 0);
     border-radius: 1rem;
     margin: 1rem 5rem;
-    transition: .25s;
+    transition: .5s ease;
     margin-block: 2.5rem;
 }
 #no-after::after{
@@ -35,6 +35,7 @@ ul{
     display: none;
 }
 .accordion.open .content{
+  transition: .5s ease;
     display: flex;
     flex-direction: column;
     padding: 0 1rem 1rem 2rem;
@@ -85,6 +86,7 @@ ul{
     animation: rotate2 .25s linear;
  }
  .accordion .open{
+  transition: .5s ease;
     box-sizing: border-box;
     box-shadow: #8438ff 0 0 6px 2px; 
        transition: .5s linear;
@@ -198,4 +200,55 @@ ul{
     color: rgb(85, 181, 215)
   }
   .skills li:hover{
-scale:1.1;  }
+scale:1.1; 
+ }
+ .CVs{
+  margin-right: 3.2rem;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+ }
+ .CVs li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ }
+ .CVs img:hover{
+  scale: 1.023;
+ }
+.CVs img{
+  transition: .3s ease;
+  margin-top: 8px;
+  width: 190px;
+  height: 250px;
+}
+.CVs label{
+  font-size: large;
+  transition: .3s ease;
+}
+.CVs label{
+  background-color: rgba(255, 255, 255, 0.556);
+  color: black;
+}
+.CVs li:nth-child(1):hover > label{
+  color: white;
+  background: linear-gradient(to left, rgba(0, 128, 0, 0.458) 50%, rgba(255, 255, 0, 0.442) 50%);
+}
+.CVs li:nth-child(2):hover > label{
+  color: white;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.458) 50%, rgba(255, 0, 0, 0.442) 50%);
+}
+@media (max-width:760px) {
+  .CVs{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .CVs img{
+    transition: .3s ease;
+    margin-top: 8px;
+    width: 150px;
+    height: 200px;
+  }
+}
